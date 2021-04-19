@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useContext } from 'react'
 import { EngineContext } from '@motor-js/core'
