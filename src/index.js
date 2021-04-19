@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Motor } from "@motor-js/core"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Motor
+      config={{
+          host: 'qap.sebrae.com.br',
+          secure: true,
+          port: null,
+          prefix: null,
+          appId: 'c66a7498-fbbf-4f81-8400-ca8f6446c47b',
+      }}
+    >
+      <App />
+    </Motor>
   </React.StrictMode>,
   document.getElementById('root')
 );
